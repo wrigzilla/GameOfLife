@@ -1,7 +1,4 @@
-﻿body {
-    font-family: 'Segoe UI', sans-serif;
-}
-
-span {
-    font-style: italic;
+﻿canvas
+{
+	border: solid 1px black;
 }

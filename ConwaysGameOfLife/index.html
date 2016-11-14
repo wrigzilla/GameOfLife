@@ -3,13 +3,21 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>TypeScript HTML App</title>
+    <title>Game of Life</title>
     <link rel="stylesheet" href="app.css" type="text/css" />
-    <script src="app.js"></script>
+    <script src="script/app.js"></script>
 </head>
 <body>
-    <h1>TypeScript HTML App</h1>
+    <h1>Conway's game of life</h1>
 
-    <div id="content"></div>
+	<canvas id="life" height="500" width="500"></canvas>
+    <div id="interface">
+		<input id="begin" type="button" value="Begin" />
+		<input id="random" type="button" value="Randomise" />
+		<input id="reset" type="button" value="Reset" />
+		<input id="iterations" type="number" value="50" min="1" max="10000" title="Iterations" />
+		<input id="speed" type="number" value="10" min="1" max="10" title="Speed" />
+		Iteration <span id="counter">1</span>
+	</div>
 </body>
 </html>
